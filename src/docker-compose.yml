@@ -6,10 +6,10 @@ services:
     deploy:
       resources:
         limits:
-          cpus: '0.75'
+          # cpus: '0.75'
           memory: 5G
         reservations:
-          cpus: '0.25'
+          # cpus: '0.25'
           memory: 3G
     volumes:
       - type: bind
@@ -27,4 +27,5 @@ services:
     environment:
       - CURRENT_DATASET
       - CURRENT_VERSION
+      - NODE_VERSION="--max-old-space-size=5000"
     command: ./run.sh

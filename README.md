@@ -3,7 +3,8 @@
 ## Prerequisites
 
 1. Docker (and Docker Compose) installed and running
-2. datasets directory filled with datasets in the proper format (network.dot + config.sh)
+2. If running through CWL, cwl-runner must also be installed. You can install the reference runner in python with `python -m pip install cwl-runner cwltool`
+3. datasets directory filled with datasets in the proper format (network.dot + config.sh)
 
 ## Running
 
