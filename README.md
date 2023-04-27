@@ -2,9 +2,7 @@
 
 ## Introduction
 
-The `map4sci project template` is a template that provides an abstraction layer for running Map4sci, making it easy to integrate Map4sci into new projects. It helps developers to add more scripts and create new repositories using the same template, which simplifies the development process and makes it easy to maintain the codebase.
-
-To use the map4sci project template, simply clone the template repository using `git clone https://github.com/cns-iu/map4sci-project-template.git` command and use it as a starting point for your own project. The template includes all the necessary files and configuration to run Map4sci and includes a run.sh script that can be used to start the Map4sci application.
+The map4sci project template is a GitHub Template repository that provides an abstraction layer for running Map4sci, making it easy to integrate Map4sci into new projects. Developers can create a new repository based on this template by going to [Create Map4sci](https://github.com/cns-iu/map4sci-project-template/generate) and using it as a starting point for their own project. The template includes all the necessary files and configurations to run Map4sci and includes a run.sh script that can be used to start the Map4sci application.
 
 With the map4sci project template, integrating Map4sci into your project is easy and straightforward, allowing you to focus on your application logic rather than the infrastructure and configuration required to run Map4sci.
 
@@ -31,7 +29,7 @@ To create a dataset, follow these steps:
 3. `Running through Docker`: Refer [Running using Docker](https://github.com/cns-iu/map4sci/tree/code-cleanup-documentation#running-using-docker).
 4. `Running through Docker Compose`: Refer [Running using Docker Compose](https://github.com/cns-iu/map4sci/tree/code-cleanup-documentation#running-using-docker-compose).
 
-## 3. Customization(Advanced)
+## 3. Customization (Advanced)
 
 The script includes several environment variables that can be used to customize the behavior of Map4sci. These variables can be set in a constants.sh file located in the same directory as the run.sh script.
 
@@ -44,11 +42,13 @@ If you choose to use CWL, you can also customize the behavior of Map4sci by modi
 
 ### 3.1 Adding more scripts
 
-In addition to customizing Map4sci using environment variables and the constants.sh file, you can also add custom scripts to modify the behavior of Map4sci. These scripts should be placed in the scripts directory and should be named with a number prefix to indicate the order in which they should be executed. For example, a script named 01_my_script.sh will be executed before a script named 02_another_script.sh.
+In addition to customizing Map4sci using environment variables and the constants.sh file, you can also add custom scripts to modify the behavior of Map4sci. These scripts should be placed in the scripts directory and should be named with a number prefix to indicate the order in which they should be executed.  For example, a script named 01-my-script.sh will be executed before a script named 02-another-script.sh
 
 To add a custom script, simply create a new file in the scripts directory with the desired name and add the necessary commands to modify the behavior of Map4sci. For example, you could add a script to download additional datasets or modify the configuration of the site generator.
 
 Note that the run.sh script will automatically execute any scripts in the scripts directory, in numerical order based on the prefix. This provides a convenient way to add customizations to Map4sci without having to modify the core code.
+
+`Note: scripts in the scripts folder should follow a numerical order from 00-.sh to 99-.sh (scripts will be skipped if its not of the form NN-*.sh)`
 
 ## 4. Results
 
