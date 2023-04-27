@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The map4sci project template is a [GitHub Template repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-template-repository) that provides a basic template for running map4sci with your network data.Developers can create a new repository based on this template by clicking [here](https://github.com/cns-iu/map4sci-project-template/generate) and using it as a starting point for their own project. The template includes all the necessary files and configurations to run map4sci and includes a run.sh script that can be used to start the map4sci application.
+The map4sci project template is a [GitHub Template repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-template-repository) that provides a basic template for running map4sci with your network data. Developers can create a new repository based on this template by clicking [here](https://github.com/cns-iu/map4sci-project-template/generate) and using it as a starting point for their own project. The template includes all the necessary files and configurations to run map4sci and includes a run.sh script that can be used to start the map4sci application.
 
 With the map4sci project template, integrating map4sci into your project is easy and straightforward, allowing you to focus on your application logic rather than the infrastructure and configuration required to run map4sci.
 
